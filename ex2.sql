@@ -8,5 +8,5 @@ CREATE TABLE matriculas (
     FOREIGN KEY ( id_aluno )
         REFERENCES estudantes,
     FOREIGN KEY ( id_curso )
-        REFERENCES professores
+        REFERENCES cursos
 )
