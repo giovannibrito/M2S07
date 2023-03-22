@@ -6,7 +6,7 @@ CREATE TABLE matriculas (
     media    NUMBER,
     PRIMARY KEY ( id ),
     FOREIGN KEY ( id_aluno )
-        REFERENCES estudantes,
+        REFERENCES estudantes(id),
     FOREIGN KEY ( id_curso )
-        REFERENCES cursos
+        REFERENCES cursos(id)
 )
